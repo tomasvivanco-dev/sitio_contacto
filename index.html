@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto Comunicaciones</title>
+  <meta name="description" content="Agencia especializada en posicionar marcas, instituciones y liderazgos mediante comunicación estratégica.">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="CCpng.jpg" type="image/jpeg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">
+        <img src="CCpng.jpg" alt="Logo Contacto Comunicaciones">
+        <span>Contacto Comunicaciones</span>
+      </div>
+      <nav>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#por-que">Por qué nosotros</a>
+        <a href="#contacto" class="btn-nav">Contacto</a>
+      </nav>
+    </div>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Comunicación estratégica que abre oportunidades</h1>
+        <p>
+          Posicionamos marcas, instituciones y liderazgos en entornos altamente competitivos,
+          construyendo presencia pública con sentido y pertinencia.
+        </p>
+        <a href="#contacto" class="btn-primary">Conversemos tu próximo desafío</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="nosotros" class="section">
+      <div class="container">
+        <h2>Nosotros</h2>
+        <p>
+          Contacto Comunicaciones es una agencia especializada en posicionar marcas, instituciones y liderazgos en entornos altamente competitivos. Nos mueve una convicción simple y poderosa: la comunicación estratégica es un activo que puede transformar percepciones, abrir oportunidades y fortalecer relaciones claves.
+        </p>
+        <p>
+          Trabajamos desde una mirada integral y multidisciplinaria, combinando análisis, narrativa y gestión de audiencias para construir presencia pública con sentido y pertinencia. Nuestro sello es conectar a cada cliente con sus públicos más relevantes —comunidad, sectores productivos, autoridades, tomadores de decisión, medios y stakeholders— generando vínculos sólidos y sostenibles en el tiempo.
+        </p>
+        <p>
+          A lo largo de nuestra experiencia hemos demostrado comprender y afrontar adecuadamente diversos escenarios y contextos, lo que nos ha permitido anticipar acciones, generar estrategias adecuadas y posicionar tendencias con mensajes que impactan donde realmente importa.
+        </p>
+        <p>
+          En Contacto Comunicaciones acompañamos, creamos, asesoramos y potenciamos a quienes desean avanzar con claridad, coherencia y propósito para generar un mejor posicionamiento y hacer más efectivo su relacionamiento estratégico, generando un impulso a las marcas, ampliando visibilidad de las organizaciones y/o personas, consolidando sus niveles de influencia y legitimidad, construyendo una reputación duradera.
+        </p>
+      </div>
+    </section>
+
+    <section id="servicios" class="section section-alt">
+      <div class="container">
+        <h2>Servicios</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Estrategia de comunicación</h3>
+            <p>Diseño de planes integrales para posicionar marcas, instituciones y liderazgos en contextos complejos.</p>
+          </article>
+          <article class="card">
+            <h3>Relaciones con medios</h3>
+            <p>Gestión de prensa, vocerías y contenidos para medios tradicionales y digitales.</p>
+          </article>
+          <article class="card">
+            <h3>Reputación y asuntos públicos</h3>
+            <p>Monitoreo, análisis y estrategias para fortalecer legitimidad e incidencia.</p>
+          </article>
+          <article class="card">
+            <h3>Contenido y narrativa</h3>
+            <p>Desarrollo de relatos y piezas editoriales alineadas a objetivos estratégicos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="por-que" class="section">
+      <div class="container">
+        <h2>Por qué elegirnos</h2>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Mirada estratégica</h3>
+            <p>Integramos análisis, narrativa y gestión de audiencias para generar impacto donde realmente importa.</p>
+          </article>
+          <article class="card">
+            <h3>Enfoque relacional</h3>
+            <p>Conectamos a nuestros clientes con sus públicos clave, construyendo vínculos sostenibles en el tiempo.</p>
+          </article>
+          <article class="card">
+            <h3>Acompañamiento cercano</h3>
+            <p>Trabajamos de manera colaborativa para alinear comunicación, propósito y resultados.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section section-alt">
+      <div class="container contacto">
+        <div>
+          <h2>Contacto</h2>
+          <p>Cuéntanos en qué etapa estás y conversemos cómo potenciar tu posicionamiento estratégico.</p>
+          <ul class="contact-list">
+            <li><strong>Correo:</strong> <a href="mailto:contacto@contactocomunicaciones.cl">contacto@contactocomunicaciones.cl</a></li>
+            <li><strong>Teléfono:</strong> +56 9 1234 5678</li>
+            <li><strong>LinkedIn:</strong> <a href="#">/contactocomunicaciones</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" netlify>
+          <label>
+            Nombre
+            <input type="text" name="nombre" required>
+          </label>
+          <label>
+            Correo electrónico
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Mensaje
+            <textarea name="mensaje" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn-primary">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <span>© <span id="year"></span> Contacto Comunicaciones</span>
+      <span>Comunicación estratégica para entornos complejos</span>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
