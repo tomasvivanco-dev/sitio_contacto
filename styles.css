@@ -154,7 +154,7 @@ nav a {
   padding: 12px 24px;
   border-radius: var(--radius-pill);
   background: #ffffff;
-  color: #0B9B9A;
+  color: var(--color-primary-dark);
   border: none;
   font-weight: 600;
   box-shadow: 0 16px 35px rgba(0,0,0,0.18);
@@ -165,7 +165,8 @@ nav a {
 .btn-primary:hover {
   transform: translateY(-1px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.22);
-  background: #f5fffe;
+  background: var(--color-primary-dark);
+  color: #ffffff;
 }
 
 /* Grid & cards */
