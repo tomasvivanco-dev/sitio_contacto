@@ -33,7 +33,6 @@ img {
 
 a {
   color: var(--color-primary-dark);
-  text-decoration: none;
 }
 
 a:hover {
